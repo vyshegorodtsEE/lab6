@@ -20,20 +20,17 @@ Complex :: ~Complex()
 {
     Re = 0.0;
     Im = 0.0;
-	@@ -27,169 +27,167 @@ void Complex :: Set (double aRe, double aIm)
-    Re = aRe;
-    Im = aIm;
-}
+	void Complex :: Set (  double aRe, double aIm) {  Re = aRe; Im = aIm;}
 Complex :: operator double()
-{
-    return abs();
+{    return abs();
 }
-    double Complex :: abs()
+
+double Complex :: abs()
 {
     return sqrt(Re * Re + Im * Im);
 }
 
-Complex Complex :: operator + (const Complex & aRval )
+Complex Complex :: operator + (const Complex & aRval)
 {
     Complex Result;
     Result.Re = Re + aRval.Re;
