@@ -45,3 +45,6 @@ friend Complex operator * (const double &, const Complex &);
         Complex & operator = (const double &);
 };
 #endif
+
+
+.
