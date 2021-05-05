@@ -20,9 +20,17 @@ Complex :: ~Complex()
 {
     Re = 0.0;
     Im = 0.0;
-	void Complex :: Set (  double aRe, double aIm) {  Re = aRe; Im = aIm;}
+}
+
+void Complex :: Set (double aRe, double aIm)
+{
+    Re = aRe;
+    Im = aIm;
+}
+
 Complex :: operator double()
-{    return abs();
+{
+    return abs();
 }
 
 double Complex :: abs()
